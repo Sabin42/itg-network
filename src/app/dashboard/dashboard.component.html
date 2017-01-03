@@ -1,0 +1,49 @@
+<div class="dashboard-wrapper">
+<div class="col-md-12 news-section-container">
+    <div class="container">
+
+        <div class="col-md-3" style="height: 100px; padding: 20px 0">
+          <md-card>
+            news section 1
+          </md-card>
+        </div>
+
+      <div class="col-md-3" style="height: 100px; padding: 20px 0">
+        <md-card>
+          news section 2
+        </md-card>
+      </div>
+
+      <div class="col-md-3" style="height: 100px; padding: 20px 0">
+        <md-card>
+          news section 3
+        </md-card>
+      </div>
+
+      <div class="col-md-3" style="height: 100px; padding: 20px 0">
+        <md-card>
+          news section 4
+        </md-card>
+      </div>
+
+    </div>
+    <!-- ending container for news-->
+  </div>
+  <!-- ending div of news-section-container-->
+  <hr>
+ <div class="row forum-design-wrapper">
+   <div class="container">
+      <div class="col-md-3 forum-filter-container">
+          <itg-forum-filter-list></itg-forum-filter-list>
+      </div>
+     <!--ending div of forum filter container-->
+      <div class="col-md-9 forum-question-list">
+        <router-outlet></router-outlet>
+          <!--<itg-forum-list></itg-forum-list>-->
+      </div>
+     <!--ending of forum questions lists-->
+   </div>
+ </div>
+ <!-- end of row forum-design-wrapper-->
+</div>
+

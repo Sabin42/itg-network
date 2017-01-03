@@ -1,0 +1,53 @@
+.flex-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .itg-logo{
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+    .login{
+        width:420px;
+        .login-header{
+            text-align: center;
+            color: #ffffff;
+            padding: 15px;
+            // margin-bottom: 15px;
+
+            img{
+                width:120px;
+                // border: 1px solid #03a9f4;
+            }
+        }
+        .login-body{
+            .body-content{
+                margin: 15px;
+            }
+            a{
+                float: right;
+                font-size: .8rem;
+                color: #1e1e1e;
+                padding-top: 3px;
+            }
+            a:hover{
+                text-decoration: none;
+                color: #03a9f4;
+            }
+        }
+        .login-footer{
+            text-align: center;
+        }
+    }
+  @media (max-width: 500px) {
+    .login{
+      width:auto;
+    }
+  }
+
+}
+

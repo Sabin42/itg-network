@@ -1,0 +1,53 @@
+/* css for button of forum post
+-----------------------------------*/
+.create-forum-post{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+li{
+  padding: 10px 0 10px 0;
+  border-bottom: 1px dotted #cbcbcb;
+}
+li:hover i{
+  padding-left: 10px;
+  /*transform: ease 0.3s;*/
+  color: #609acc;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+li a{
+  color: #858585;
+}
+li i{
+  color: #5cb;
+}
+.filter-heading{
+  font-weight: bold;
+  font-size:18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: gray;
+}
+.category-filter-listing li a{
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.category-filter-listing li a:nth-child(1) :hover {
+  padding-left: 10px;
+  border-left: 7px solid #23c3ff;
+}
+.category-filter-listing li a:nth-child(2) :hover {
+  padding-left: 10px;
+  border-left: 7px solid #ffa173;
+}
+.category-filter-listing li a:nth-child(3) :hover {
+  padding-left: 10px;
+  border-left: 7px solid #39ff44;
+}
+

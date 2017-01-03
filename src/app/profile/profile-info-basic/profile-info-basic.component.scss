@@ -1,0 +1,42 @@
+.profile-basic{
+
+  .profile-image{
+    text-align: center;
+    margin-bottom: 13px;
+  }
+  .profile-details{
+    padding:10px;
+
+    .profile-heading{
+      h3{
+        font-weight: 300;
+        color: #03a9f4;
+      }
+      label{
+        font-size: 17px;
+      }
+    }
+
+    li{
+      padding: 3px;
+      label{
+        font-size: 13px;
+      }
+      span{
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  @media (max-width: 768px){
+    .profile-details{
+      .profile-heading{
+        text-align: center;
+      }
+      li{
+        text-align: center;
+      }
+    }
+  }
+}

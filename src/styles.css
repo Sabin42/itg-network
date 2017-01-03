@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+body{
+    background-color: #f5f5f5;
+}
+
+/*input floating edited mdb-default input edited */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date]{
+    border-bottom: none;
+    height:1.2em;
+}
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]){
+    border-bottom: none;
+    box-shadow: none;
+}
+.full-width{
+    width: 100%;
+}
+/*input floating edited mdb-default input edited */
+
+.zero-pad{
+    padding: 0px;
+}

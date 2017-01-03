@@ -1,0 +1,43 @@
+.dashboard-wrapper{
+  overflow: hidden;
+}
+.itg-dashboard{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.forum-filter-container{
+  padding: 0 30px 10px 10px;
+  border-right: 7px solid #ffffff;
+  /*background-color: #ffffff;*/
+}
+
+/* css section news in home(dashboard) page
+----------------------------------*/
+
+
+/* css section for forum list in home(dashboard) page
+----------------------------------*/
+
+
+
+/* css section for forum wrapper (whole page)
+----------------------------------*/
+.forum-design-wrapper{
+  padding-top:30px;
+}
+
+/* css section for news section
+----------------------------------*/
+.news-section-container{
+  min-height: 200px;
+  background-color: darkorange;
+  margin-bottom: 35px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.news-section-container h1{
+  padding-top:50px;
+}

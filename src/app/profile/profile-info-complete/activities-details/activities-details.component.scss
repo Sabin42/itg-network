@@ -1,0 +1,150 @@
+.activities-detail {
+  overflow: hidden;
+  h4{
+    color: #03a9f4;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    font-weight: 300;
+    i{
+      font-size: 20px;
+      padding-right: 12px;
+    }
+  }
+  @media (max-width: 850px) {
+    h4 {
+      font-size: 18px;
+      i {
+        font-size: 18px; //smaller font size for button display
+      }
+    }
+  }
+
+  .activities-item {
+    margin-bottom: 25px;
+    margin-left: 40px;
+    position: relative;
+
+    .activities-inner {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      position: relative;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.20);
+
+      .inner-details{
+        padding: 10px;
+        display: block;
+        .activity-title{
+          font-size: 18px;
+          font-weight: 500;
+          color: #595959;
+        }
+        .activity-subtitle{
+          font-size: 14px;
+          color: #bbbbbb;
+          span:nth-child(2){
+            padding-left: 10px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #03a9f4;
+          }
+        }
+        .subtitle-category{
+          margin-bottom: 9px;
+
+          span{
+            font-size: 12px;
+          }
+        }
+        .activity-body{
+          font-size: 14px;
+          color: #454545;
+        }
+      }
+    }
+
+    .activities-inner:before {
+      border-right: 10px solid #ddd;
+      border-style: solid;
+      border-width: 10px;
+      color: rgba(0, 0, 0, 0);
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      left: -20px;
+      top: 6px;
+      width: 0;
+    }
+
+    .activities-inner:after {
+      border-right: 10px solid #fff;
+      border-style: solid;
+      border-width: 10px;
+      color: rgba(0, 0, 0, 0);
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      left: -18px;
+      top: 6px;
+      width: 0;
+    }
+  }
+
+
+  @media (max-width: 850px) {
+    .activities-item {
+      .activities-inner {
+        .inner-details{
+          .activity-title{
+            font-size: 16px;
+          }
+          .activity-subtitle{
+            font-size: 13px;
+            span:nth-child(2){
+              font-size: 12px;
+            }
+          }
+          .subtitle-category{
+            margin-bottom: 9px;
+            span{
+              font-size: 11px;
+            }
+          }
+          .activity-body{
+            font-size: 13px;
+            color: #454545;
+          }
+        }
+      }
+    }
+  }
+
+  //circle pachi ko line
+  .activities-item:before {
+    background: #fff;
+    border-radius: 2px;
+    bottom: -30px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    content: "";
+    height: 100%;
+    left: -30px;
+    position: absolute;
+    width: 3px;
+  }
+  //circle of timeline
+  .activities-item:after {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    content: "";
+    height: 15px;
+    left: -36px;
+    position: absolute;
+    top: 10px;
+    width: 15px;
+  }
+}

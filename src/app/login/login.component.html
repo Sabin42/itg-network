@@ -1,0 +1,33 @@
+<div class="flex-container">
+    <div class="itg-logo">
+        <img src="./assets/img/IT-Glance-logo.png" class="img-responsive" width="220px"/>
+    </div>
+
+    <div class="">
+        <md-card class="login">
+            <div class="login-header">
+                <img src="./../../assets/img/user1.jpg" class="rounded-circle z-depth-1-half"/>
+            </div>
+            <div class="login-body">
+                <md-list>
+                    <md-list-item>
+                        <md-icon fontSet="fa" fontIcon="fa-user"></md-icon>
+                        <md-input type="text" placeholder="Username" class="full-width"></md-input><br>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-icon fontSet="fa" fontIcon="fa-lock"></md-icon>
+                        <md-input type="password" placeholder="Password" class="full-width"></md-input><br>
+                    </md-list-item>
+                    <div class="body-content">
+                        <md-checkbox [checked]="true" align="start" color="primary">Remember me</md-checkbox>
+                        <a md-list href="#">Forgot Password?</a>
+                    </div>
+                </md-list>
+            </div>
+            <div class="login-footer">
+                <button md-raised-button color="primary" style="width: 75%">Login</button>
+            </div>
+        </md-card>
+    </div>
+</div>
+

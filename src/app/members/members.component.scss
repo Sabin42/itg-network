@@ -1,0 +1,125 @@
+.members{
+  margin:50px;
+
+  md-card{
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:5px 10px 10px 10px;
+    margin-bottom: 45px;
+    .search-container {
+      max-width: 950px;
+      margin: auto;
+      text-align: center;
+      i{
+        font-size: 20px;
+        padding: 8px;
+        color: #454545;
+      }
+      .search {
+        width: 150px;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+      }
+      .search:focus,
+      .search:active{
+        width: 90%;
+      }
+    }
+
+  }
+  .member-list{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    .member-block{
+     margin: 2px;
+    }
+  }
+}
+
+//search effect
+input[type=search]{
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+input[type=search]:focus:not([readonly]){
+  //border-bottom: none;
+}
+
+//hover effect
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+.hovereffect .overlay {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  padding: .8em;
+  height: 3em;
+  //background: #79FAC4;
+  background: #03a9f4;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+.hovereffect:hover img {
+  -webkit-transform: translate3d(0,-10%,0);
+  transform: translate3d(0,-10%,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0px;
+  display: inline-block;
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h2{
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}

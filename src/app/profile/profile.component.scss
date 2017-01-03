@@ -1,0 +1,26 @@
+.cover{
+  min-height: 220px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+  background: url("../../assets/img/back.png")no-repeat center center fixed #23c3ff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @media (max-width: 767px) {
+    min-height: 320px;
+  }
+}
+.profile{
+  top: 100px;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    top:145px;
+  }
+}
+

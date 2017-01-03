@@ -1,0 +1,152 @@
+.personal-details{
+  color: #454545;
+
+  h4{
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #03a9f4;
+    i{
+      font-size: 20px;
+      padding-right: 12px;
+    }
+    .custom-edit-btn{
+      margin-top: 0px;
+      font-size: 12px;
+      padding: 5px 8px 5px 8px;
+      text-transform: none;
+      i{
+        font-size: 12px;
+        padding-right: 4px;
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    h4{
+      font-size: 18px;
+      i{
+        font-size: 18px;  //smaller font size for button display
+      }
+    }
+  }
+
+  //personal info section
+  .personal-info{
+    .row{
+      .col-md-6{
+        padding: 0px;
+
+        .dl-horizontal{
+          font-size: 16px;
+          dt{
+            color: #595959;
+          }
+          dd{
+            color: #454545;
+          }
+        }
+      }
+    }
+    @media (max-width: 850px) {
+      .row{
+        .col-md-6{
+          padding: 0px;
+          .dl-horizontal{
+            font-size: 14px;  //font size smaller for better display:personal details
+          }
+        }
+      }
+    }
+  }
+
+  //experience info section
+  .experience-info{
+    i{
+      position: absolute;
+      margin-top: 4px;
+      margin-left: 5px;
+    }
+    .experience-details{
+      position: relative;
+      margin-left: 32px;
+      span {
+        display: block;
+      }
+      .title {
+        font-size: 16px;
+      }
+      .sub-title1 {
+        font-size: 14px;
+      }
+      .sub-title2 {
+        color: #bbbbbb;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      i{
+        font-size: 14px;
+      }
+      .experience-details{
+        .title {
+          font-size: 14px;
+        }
+        .sub-title1 {
+          font-size: 12px;
+        }
+        .sub-title2 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  //education info section
+  .academic-info{
+    i{
+      position: absolute;
+      margin-top: 4px;
+      margin-left: 5px;
+    }
+    .academic-details{
+      position: relative;
+      margin-left: 38px;
+      span {
+        display: block;
+      }
+      .title {
+        font-size: 16px;
+      }
+      .sub-title1 {
+        font-size: 14px;
+      }
+      .sub-title2 {
+        color: #bbbbbb;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      i{
+        font-size: 14px;
+      }
+      .academic-details{
+        .title {
+          font-size: 16px;
+        }
+        .sub-title1 {
+          font-size: 14px;
+        }
+        .sub-title2 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  //skills info section
+  .skills-info{
+
+  }
+
+}
