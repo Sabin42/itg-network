@@ -1,16 +1,17 @@
-.members{
-  margin:50px;
+.members {
+  margin: 50px 30px;
 
-  md-card{
+  //search-box
+  md-card {
     height: 50px;
     background-color: rgba(255, 255, 255, 0.5);
-    padding:5px 10px 10px 10px;
+    padding: 5px 10px 10px 10px;
     margin-bottom: 45px;
     .search-container {
       max-width: 950px;
       margin: auto;
       text-align: center;
-      i{
+      i {
         font-size: 20px;
         padding: 8px;
         color: #454545;
@@ -22,104 +23,260 @@
         transition: all .5s ease;
       }
       .search:focus,
-      .search:active{
+      .search:active {
         width: 90%;
       }
     }
-
-  }
-  .member-list{
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-
-    .member-block{
-     margin: 2px;
+    //search effect
+    input[type=search] {
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+    }
+    input[type=search]:focus:not([readonly]) {
+      //border-bottom: none;
     }
   }
-}
 
-//search effect
-input[type=search]{
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-}
-input[type=search]:focus:not([readonly]){
-  //border-bottom: none;
-}
+  .member-list{
+    margin: 20px 0;
 
-//hover effect
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-}
-.hovereffect .overlay {
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  left: 0;
-  top: auto;
-  bottom: 0;
-  padding: .8em;
-  height: 3em;
-  //background: #79FAC4;
-  background: #03a9f4;
-  color: #3c4a50;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
+    h3{
+      width: 100%;
+    }
 
-.hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
+    .member-block{
+      display: flex;
+      margin: 2px;
 
-.hovereffect:hover img {
-  -webkit-transform: translate3d(0,-10%,0);
-  transform: translate3d(0,-10%,0);
-}
+      .profile-image{
+        //hover effect
+        .hovereffect {
+          float: left;
+          overflow: hidden;
+          position: relative;
+          text-align: center;
+          cursor: default;
+        }
+        .hovereffect .overlay {
+          width: 100%;
+          position: absolute;
+          overflow: hidden;
+          left: 0;
+          top: auto;
+          bottom: -1px;
+          padding: .8em;
+          height: 3em;
+          //background: #79FAC4;
+          background: #03a9f4;
+          color: #3c4a50;
+          -webkit-transition: -webkit-transform 0.35s;
+          transition: transform 0.35s;
+          -webkit-transform: translate3d(0,100%,0);
+          transform: translate3d(0,100%,0);
+        }
 
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  font-weight: 400;
-  margin: 0px;
-  display: inline-block;
-}
+        .hovereffect img {
+          display: block;
+          height: 200px;
+          position: relative;
+          -webkit-transition: -webkit-transform 0.35s;
+          transition: transform 0.35s;
+        }
 
-.hovereffect a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  margin: 50px 0 0 0;
-  background-color: transparent;
-}
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
-}
+        .hovereffect:hover img {
+          -webkit-transform: translate3d(0,-10%,0);
+          transform: translate3d(0,-10%,0);
+        }
 
-.hovereffect:hover .overlay,
-.hovereffect:hover h2{
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
+        .hovereffect h2 {
+          text-transform: uppercase;
+          color: #fff;
+          text-align: center;
+          position: relative;
+          font-size: 17px;
+          font-weight: 400;
+          margin: 0px;
+          display: inline-block;
+        }
 
-.hovereffect:hover h2 {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
+        .hovereffect a.info {
+          display: inline-block;
+          text-decoration: none;
+          padding: 7px 14px;
+          text-transform: uppercase;
+          color: #fff;
+          border: 1px solid #fff;
+          margin: 50px 0 0 0;
+          background-color: transparent;
+        }
+        .hovereffect a.info:hover {
+          box-shadow: 0 0 5px #fff;
+        }
+
+        .hovereffect:hover .overlay,
+        .hovereffect:hover h2{
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+        }
+
+        .hovereffect:hover h2 {
+          -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+        }
+      } //image - hover effect
+
+    }
+  }
+
+  .founders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    .member-block{
+      display: flex; //as parent
+      flex-grow: 1; //as flex child(item)
+      max-height: 225px;
+      background: #b3cdb0;
+
+      .profile-image{
+      }
+      .quotes{
+        margin: 0;
+        padding: 20px 20px 5px 20px;
+        color: #454545;
+
+        h4{
+          margin:0;
+          padding: 0;
+          font-weight: 400;
+        }
+        span{
+          font-size: 12px;
+          font-style: italic;
+          color: #555555;
+        }
+        p{
+          margin:0;
+          font-size: 14px;
+        }
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .member-block{
+        justify-content: center;
+        align-content: center;
+        width: 45%;
+        max-height: 225px; //image ko size of text-box rakhna
+
+        &:first-of-type{
+          width: 100%;
+        }
+        .profile-image{
+          flex-grow: 0;
+        }
+        .quotes{
+        }
+      }
+    }
+  }
+  //founders ko lagi matrai
+  @media (max-width:600px) {
+    .member-list {
+      .founders{
+        .member-block{
+          display: block;
+          margin: 0;
+          max-height: 100%;
+          max-width: 100%;
+
+          &:first-of-type{
+            padding-top: 20px;
+          }
+          .profile-image{
+
+            .hovereffect{
+              float: none;
+              width: 150px;
+              margin: 0 auto;
+              img{
+                height: 150px;
+                width: auto;
+              }
+              .hovereffect {
+                .overlay {
+                  h2{
+
+                  }
+                }
+              }
+            }
+          }
+          .quotes{
+            text-align: center;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  //overall ko lagi (mentors, sub-mentors, members-only)
+  @media (max-width: 675px) {
+    .members{
+      margin:30px 10px;
+    }
+    .member-list{
+      .mentors,
+      .sub-mentors,
+      .members-only{
+        .member-block {
+          justify-content: center;
+          align-content: center;
+          .profile-image {
+
+            .hovereffect {
+              float: none;
+
+              margin: 0 auto;
+              img {
+                height: 120px;
+                width: auto;
+              }
+              .overlay{
+                h2 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mentors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+  .sub-mentors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+  .members-only {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+}
+@media (max-width: 786px) {
+  .members {
+    margin: 30px 10px;
+  }
 }

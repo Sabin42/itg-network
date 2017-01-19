@@ -10,14 +10,9 @@ import { Component, OnInit, Input, trigger, state, style, transition,keyframes, 
    },
   animations: [
     trigger('routeAnimation', [
-      state('void', style({ opacity: 0})),
       transition('void => *', [
-        animate(
-          '1s ease-in',
-          style({
-          opacity: 1,
-        })
-        )
+        style({ opacity: 0}),
+        animate('.4s ease-in')
       ])
     ])
   ]

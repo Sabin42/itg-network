@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'itg-profile-nav',
@@ -8,7 +7,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProfileNavComponent implements OnInit {
 
-  constructor( route: ActivatedRoute) {
+  constructor() {
 
   }
 

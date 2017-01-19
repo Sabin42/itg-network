@@ -19,7 +19,8 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "./assets/mytheme.scss"
+        "assets/mytheme.scss",
+        "../node_modules/mdbootstrap/css/mdb.css"
       ],
       "scripts": [],
       "environments": {
